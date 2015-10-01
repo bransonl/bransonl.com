@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'/>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 
 	<!--[if lt IE 9]>
@@ -24,18 +25,18 @@
 			<ul id="links">
 				<a class="anchor about" href="#about"><li>About</li></a>
 				<a class="anchor projects" href="#projects"><li>Projects</li></a>
-				<a href="mailto:hello@bransonl.com"><li>Resume</li></a>
+				<a href="/assets/BransonLeeResume.pdf" target="_blank"><li>Resume</li></a>
 			</ul>
 			<ul id="icons">
-				<a class="github" href="https://github.com/bransonl"><img class="github" src="assets/github.png"/></a>
-				<a href="https://linkedin.com/in/bransonl"><div class="linkedin"></div></a>
-				<a class="mail" href="mailto:hello@bransonl.com"><img class="mail" src="assets/mail.png"/></a>
+				<a class="github" href="https://github.com/bransonl" target="_blank"><img class="github" src="assets/github.png"/></a>
+				<a href="https://linkedin.com/in/bransonl" target="_blank"><div class="linkedin"></div></a>
+				<a class="mail" href="mailto:hello@bransonl.com" target="_blank"><img class="mail" src="assets/mail.png"/></a>
 			</ul>
 		</div>
 	</div>
 	<div id="front">
 		<div></div>
-		<h1 id="title">Hello. I'm Branson.</h1>
+		<h1 id="title">Branson Lee</h1>
 	</div>
 	<div id="about-section">
 		<h1>Hi. My name is Branson.</h1>
@@ -61,21 +62,30 @@
 		</div>
 	</div>
 	<div id="project-details-wrapper">
-		<div class="project-details bulletin" style="background-color: #59ABE3">
+		<div class="project-details bulletin">
 			<h1>Bulletin</h1>
 			<img class="close" src="assets/close.png"/>
+			<p>Bulletin is a group-based bulletin board web-app. The idea is for multiple users to have shared bulletin boards where each user can create new, edit existing or delete posts on the board. These posts are then displayed, grouped and coloured based on user created groups and with size depending on the importance of the post set by the user.</p>
+			<p>The front end is built with AngularJS using D3.js Treemap to visualize the posts. The back end uses Node.js with Express and a PostgreSQL database to store account and board info.</p>
+			<p>This project is currently in progress.</p>
 		</div>
-		<div class="project-details big2" style="background-color: #9B59B6">
-			<h1>2</h1>
+		<div class="project-details big2">
+			<a href="http://bransonl.com/2"><h1>2</h1></a>
+			<img class="close" src="assets/close.png"/>
+			<p>2 is a real-time multiplayer Big 2 web-app capable of handling multiple simultaneous games in separate rooms. It also has a built in chat so players can speak to one another during a game. Also, it has spectator functionality, allowing people to watch games if the room is full, the game is in progress or if they just don't want to play. There is also a player substitution feature where players can swap in a spectator to play for them.</p>
+			<p>The server provides a variety of commands depending on the person's role of host, player or spectator, with most restricted to the host of the room. Information on these commands can be retrieved using /help in the chat box.</p>
+			<p>The front end is built with AngularJS. The back end uses Node.js with Express and Socket.io to handle websockets and allow simultaneous real-time connections separated by room. The game can be found at <a href="http://bransonl.com/2">bransonl.com/2</a>.</p>
+		</div>
+		<div class="project-details lumberhack">
+			<a href="https://github.com/bransonl/lumberhack"><h1>Lumberhack</h1></a>
 			<img class="close" src="assets/close.png"/>
 		</div>
-		<div class="project-details lumberhack" style="background-color: #26A65B">
-			<h1>Lumberhack</h1>
+		<div class="project-details alisonleeco">
+			<a href="http://alisonlee.co"><h1>alisonlee.co</h1></a>
 			<img class="close" src="assets/close.png"/>
-		</div>
-		<div class="project-details alisonleeco" style="background-color: #F2784B">
-			<h1>alisonlee.co</h1>
-			<img class="close" src="assets/close.png"/>
+			<p>alisonlee.co is a website developed for a graphic designer to showcase their portfolio of work. As many graphic designers do not have the desire to learn HTML, CSS and JavaScript to develop and maintain their own websites, I developed a system using which the graphic designer can easily add to, update or remove their work from the website, much like a CMS but significantly simpler. Also, all file modifications are done by the designer on the server where the files are hosted.</p>
+			<p>The system depends on a certain organization of files on the server, a file to determine the selection and order of work shown, and files to determine the order in which the content for each piece of work is displayed in the additional writeup for each piece. Using these files, the client-side JavaScript systematically retrieves the corresponding files from the server and places them onto the DOM in the order specified by the designer.</p>
+			<p>The portfolio section of the website acts similarly to a SPA. The "single page" aspects are implemented with only DOM manipulation using JavaScript with the JQuery library since a larger framework such as AngularJS would be highly unneccessary for the amount of content and the features of the website.</p>
 		</div>
 	</div>
 
