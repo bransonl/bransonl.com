@@ -25,25 +25,39 @@ a:hover {
 
 #inner {
 	width: 100%;
-	padding-left: 20%;
+	padding: 0 10%;
 }
 
 #icons {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	margin: 10px 0;
 }
 
 #icons a {
-	margin: 0 20px 0 0;
+	margin: 10px 20px 0 0;
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 2em;
 	margin: 0;
 }
 
 p {
-	font-size: 2em;
-	margin: 0;
+	font-size: 1em;
+}
+
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: 4em;
+	}
+
+	p {
+		font-size: 2em;
+	}
+
+	#inner {
+		padding: 0 10%;
+	}
 }

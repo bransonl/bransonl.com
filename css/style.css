@@ -120,7 +120,7 @@ p {
 
 @media screen and (min-width: 800px) {
 	h1 {
-		font-size: 35px
+		font-size: 35px;
 	}
 	
 	li {
