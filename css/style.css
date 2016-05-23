@@ -6,6 +6,10 @@ html, body {
 	font-family: "Josefin Slab", serif;
 }
 
+.header-link {
+	color: #000000;
+}
+
 a {
 	text-decoration: none;
 	color: #1e8bc3;
@@ -13,7 +17,7 @@ a {
 }
 
 a:hover {
-	color: #52b3d9;
+	opacity: 0.5;
 }
 
 ul {
