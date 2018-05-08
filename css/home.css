@@ -38,12 +38,6 @@ li {
 	background-color: #ececec;
 }
 
-#filler {
-	display: none;
-	height: 74px;
-	padding: 10px 0;
-}
-
 #header {
 	display: flex;
 	flex-direction: column;
@@ -129,10 +123,6 @@ p {
 
 	li {
 		display: inline-block;
-	}
-
-	#filler {
-		height: 90px;
 	}
 
 	#logo {
