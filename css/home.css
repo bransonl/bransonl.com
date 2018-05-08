@@ -112,7 +112,7 @@ li {
 	min-width: 200%;
 	display: flex;
 }
-	
+
 .project-desc, .project-img {
 	width: 40%;
 	padding: 10% 5%;
@@ -126,11 +126,11 @@ p {
 	h1 {
 		font-size: 35px;
 	}
-	
+
 	li {
 		display: inline-block;
 	}
-	
+
 	#filler {
 		height: 90px;
 	}
@@ -143,16 +143,16 @@ p {
 	#header img {
 		width: 50px;
 	}
-	
+
 	#links {
 		font-size: 1.3em;
 	}
-	
+
 	.project {
 		min-width: 100%;
 		flex-direction: column;
 	}
-	
+
 	.project-desc, .project-img {
 		width: 60%;
 		padding: 0 20%;
