@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-	color: #52b3d9;
+	opacity: 0.5;
 }
 
 #outer {
@@ -37,6 +37,11 @@ a:hover {
 
 #icons a {
 	margin: 10px 20px 0 0;
+	opacity: 0.4;
+}
+
+#icons a:hover {
+	opacity: 1;
 }
 
 h1 {
